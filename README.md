@@ -3,9 +3,9 @@
 ---
 This program is a school management system written in Python. The  main parts of the school - student, teacher, course, and classroom - each have their own  class. Data is stored in a `data.json` file. When the program starts, information is loaded from this file, and after every change, the updated data is saved back into it.
 
-#### Class Structure
+#### Class structure
 
-- The Course class includes the course ID,  name,  credits, and student grades.
+- The Course class includes the course ID,  name,  units, and scores.
 - The Student class includes an ID, first name, last name, and a list of selected courses  with  grades.
 - The Teacher class includes a teacher ID, first name, last name, grade, and the  courses they can teach.
 - The Classroom class includes a classroom ID,  name,  assigned course, teacher, and  enrolled students.
