@@ -1,7 +1,7 @@
 ### Description of the school management project (Python)
 
 ---
-This program is a school management system written in Python. The  main parts of the school - student, teacher, course, and classroom - each have their own  class. Data is stored in a `data.json` file. When the program starts, information is loaded from this file, and after every change, the updated data is saved back into it.
+This program is a school management system written in Python. The  main parts of the school, like student, teacher, course, and classroom each have their own  class. Data is stored in a `data.json` file. When the program starts, information is loaded from this file, and after every change, the updated data is saved back into it.
 
 #### Class structure
 
@@ -10,21 +10,42 @@ This program is a school management system written in Python. The  main parts of
 - The Teacher class includes a teacher ID, first name, last name, grade, and the  courses they can teach.
 - The Classroom class includes a classroom ID,  name,  assigned course, teacher, and  enrolled students.
 
-#### Data Loading and Management
-
-At the start of the program, data is read from the JSON file. Each section  is converted into Python objects and stored in separate lists.
-When adding, editing, or deleting  data, the program  checks for invalid or conflicting information. 
-
-- A course can't be deleted if it's still assigned to a student or  teacher.
-- A student can only be added to a classroom if they have the course and their grade is below 10.
-- A teacher can only be assigned to a classroom if they're qualified to teach the course.
-
-#### Menus and User Interaction
-
-1. The system uses multi-level menus.
-2. Users can add, edit, or delete students.
-3. They can assign courses  and enter  grades.
-4. Users can register new teachers or edit their courses.
-5. They can create new courses or manage existing ones.
-6. Users can create classrooms, change the assigned teacher or course, and add or remove students.
-7. Finally, use the Save option to write all updated data back to the JSON file.
+#### Instruction
+This program uses a step-by-step menu system controlled by the `level` variable. The user types a number to go to the matching menu, like students, teachers, courses, or classrooms. The user can enter the number 0 to return to the previous menu. For example:
+``` python
+1.students
+2.teachers
+3.courses
+4.classrooms
+5.save
+0.exit
+>>1
+1.add student
+2.edit student
+3.delete student
+4.view students
+5.select student
+0.back
+>>0
+1.students
+2.teachers
+3.courses
+4.classrooms
+5.save
+0.exit
+>>4
+1.add classroom
+2.edit classroom
+3.delete classroom
+4.view classrooms
+5.select classroom
+0.back
+>>0
+1.students
+2.teachers
+3.courses
+4.classrooms
+5.save
+0.exit
+>>0
+```
