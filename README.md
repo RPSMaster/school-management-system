@@ -1,4 +1,4 @@
-### Description of the School Management Project (Python)
+### Description of the school management project (Python)
 
 ---
 This program is a school management system written in Python. The  main parts of the school - student, teacher, course, and classroom - each have their own  class. Data is stored in a `data.json` file. When the program starts, information is loaded from this file, and after every change, the updated data is saved back into it.

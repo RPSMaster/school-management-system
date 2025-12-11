@@ -386,7 +386,7 @@ while True:
             if c1 in classrooms:
                 level="select_classroom"
                 selected_classroom_index=classrooms.index(c1)
-
+                
         elif cmd==0:
             level="root"
 
